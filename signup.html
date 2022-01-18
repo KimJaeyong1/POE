@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PPP signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+</head>
+
+<body>
+    <div id=signup_main>
+        <div id="signup_logo">
+            <a href="index.html">
+                <img src="image/logo.jpg">
+            </a>
+        </div>
+        <div id="signup_area">
+            <form id="signup_form">
+                <p class="signup_text">아이디<span>(영문과 숫자만 가능)</span></p>
+                <input id="input_id" type="text"><br>
+                <p class="signup_text">비밀번호<span>(특수문자를 포함한 8자 이상)</span></p>
+                <input id="input_pw" type="text"><br>
+                <p class="signup_text">비밀번호 재확인</p>
+                <input id="input_pc" type="text"><br>
+                <p class="signup_text">이름</p>
+                <input id="input_name" type="text"><br>
+                <p class="signup_text">생년월일</p>
+                <input id="input_birth_year" type="text">
+                <select name="month" id="input_birth_month">
+                    <option value>월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <input id="input_birth_day" type="text"><br>
+                <p class="signup_text">성별</p>
+                <select name="gender" id="input_gender">
+                    <option value selected>성별</option>
+                    <option value="M">남자</option>
+                    <option value="F">여자</option>
+                    <option value="U">선택안함</option>
+                </select>
+                <p class="signup_text">연락처</p>
+                <input id="input_number" type="text"><br>
+                <p class="signup_text">이메일 주소</p>
+                <input id="input_email" type="text"><br>
+                <input id="input_sign" type="button" value="가입하기" onclick="loginSuccess()">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

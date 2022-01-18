@@ -65,10 +65,12 @@ span {
 }
 
 #input_lo {
+    background-image: url(image/btn.png);
     width: 350px;
     height: 40px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }

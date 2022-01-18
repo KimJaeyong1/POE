@@ -21,6 +21,9 @@ function loginCheck() {
     } else if (inputID.value == saveID && inputPW.value != savePW) {
         alert("비밀번호가 틀렸습니다.")
         console.log("로그인 실패")
+    } else {
+        alert("아이디와 비밀번호를 입력해주세요.")
+        console.log("로그인 실패")
     }
 }
 
