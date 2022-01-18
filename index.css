@@ -1,0 +1,140 @@
+#main {
+    background: rgb(39, 39, 39);
+    width: 100%;
+}
+
+#time {
+    width: 1158px;
+    height: 30px;
+    line-height: 30px;
+    background: black;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+}
+
+#top_scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+#main_frame {
+    background: #040c0f;
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title {
+    margin-top: 30px;
+    background: red;
+    width: 1200px;
+    height: 150px;
+    /* background-image: url(image/top_back.jpg); */
+}
+
+#left_menu {
+    position: sticky;
+    top: 0;
+    background: #040c0f;
+    width: 270px;
+    height: 792px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.login_box {
+    background: rgb(39, 39, 39);
+    width: 250px;
+    height: 140px;
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: white;
+}
+.login-bt {
+    background: #040c0f;
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    display: block;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.util-bt {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#left_list {
+    background: rgb(39, 39, 39);
+    width: 250px;
+    height: 600px;
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+#left_list > ul > li {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+#main_contnet {
+    background: rgb(39, 39, 39);
+    width: 890px;
+    border: 1px solid white;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#main_contnet > h2 {
+    margin: 20px;
+}
+
+#main_contnet > p {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
