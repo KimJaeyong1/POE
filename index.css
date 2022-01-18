@@ -44,10 +44,8 @@ a:hover {
 }
 #title {
     margin-top: 30px;
-    background: red;
     width: 1200px;
     height: 150px;
-    /* background-image: url(image/top_back.jpg); */
 }
 
 #left_menu {
