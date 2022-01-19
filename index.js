@@ -9,22 +9,23 @@ window.onload = function() {
 function showClock()
     {
         var currentDate=new Date();
-        var Clock=document.getElementById("time");
-        var ampm=currentDate.getHours();
-        if(ampm<12)
+        var divClock=document.getElementById("time");
+        var apm=currentDate.getHours();
+        if(apm<12)
         {
-            ampm="AM ";
+            apm="AM ";
         }
         else
         {
-            ampm="PM ";
+            apm="PM ";
         }
         
-        var whatTime = ampm+currentDate.getHours()+" : ";
-        whatTime += currentDate.getMinutes() + " : ";
-        whatTime += currentDate.getSeconds();
+        var msg = apm +(
+        currentDate.getHours()-12)+" : ";
+        msg += currentDate.getMinutes() + " : ";
+        msg += currentDate.getSeconds();
         
-        Clock.innerText=whatTime;
+        divClock.innerText=msg;
         
         setTimeout(showClock,1000);
     }
