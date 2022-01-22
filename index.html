@@ -6,8 +6,8 @@
     <title>Path of Exile Pan Page</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
     <script src="login.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body onload="showClock()">
@@ -31,95 +31,123 @@
                 </div>
                 <div id="left_list">
                     <ul>
-                        <li><a href="#list1">수확</a></li>
-                        <li><a href="#list2">베이스아이템</a></li>
-                        <li><a href="#list3">스킬군주얼</a></li>
-                        <li><a href="#list4">불멸자</a></li>
-                        <li><a href="#list5">앗조아틀</a></li>
-                        <li><a href="#list6">야수</a></li>
-                        <li><a href="#list7">주얼</a></li>
-                        <li><a href="#list8">스킬젬</a></li>
-                        <li><a href="#list9">성유</a></li>
-                        <li><a href="#list10">판테온</a></li>
-                        <li><a href="#list11">감시자의돌</a></li>
-                        <li><a href="#list12">지도</a></li>
+                        <li><a href="javascript:listClick1()">수확</a></li>
+                        <li><a href="javascript:listClick2()">베이스아이템</a></li>
+                        <li><a href="javascript:listClick3()">스킬군주얼</a></li>
+                        <li><a href="javascript:listClick4()">불멸자</a></li>
+                        <li><a href="javascript:listClick5()">앗조아틀</a></li>
+                        <li><a href="javascript:listClick6()">야수</a></li>
+                        <li><a href="javascript:listClick7()">주얼</a></li>
+                        <li><a href="javascript:listClick8()">스킬젬</a></li>
+                        <li><a href="javascript:listClick9()">성유</a></li>
+                        <li><a href="javascript:listClick10()">판테온</a></li>
+                        <li><a href="javascript:listClick11()">감시자의돌</a></li>
+                        <li><a href="javascript:listClick12()">지도</a></li>
                     </ul>
                 </div>
             </div>
             <div id="main_contnet">
-                <h2 id="list1">수확</h2>
-                <P>
-                수확 우선 순위<br>
-                야생뾰족등<br>
-                - 희귀 아이템 재련 (접두어 모두 유지)<br>
-                - 희귀 아이템 재련 (접미어 모두 유지)<br>
-                - 희귀 아이템 재련. 같은 유형의 속성이 나올 가능성 낮음<br>
-                - 희귀 아이템 재련. 같은 유형의 속성이 나올 가능성 높음<br>
-                </P>
+                <img id="main_back" src="image/main_back.jpg">
 
-                <h2 id="list2">베이스아이템</h2>
-                <P>
-                중요한 베이스아이템<br>
-                목걸이<br>
-                마노 목걸이 lv85<br>
-                황수정 목걸이 lv85<br>
-                </P>
-
-                <h2 id="list3">스킬군주얼</h2>
-                <P>
-                대형 스킬 군주얼<br>
-                냉기 피해 12% 증가 lv68
-                </P>
-
-                <h2 id="list4">불멸자</h2>
-                <P>
-                불멸자 세팅
-                </P>
-
-                <h2 id="list5">앗조아틀</h2>
-                <P>
-                중요한 사원 목록
-                </P>
-
-                <h2 id="list6">야수</h2>
-                <P>
-                주로 사용하는 야수
-                </P>
-
-                <h2 id="list7">주얼</h2>
-                <P>
-                잘 쓰이는 군주얼
-                </P>
-
-                <h2 id="list8">스킬젬</h2>
-                <P>
-                중요 스킬젬
-                </P>
-
-                <h2 id="list9">성유</h2>
-                <P>
-                성유 인챈트 목록<br>
-                주권:은빛성유 3개 - 스킬의 마나 점유 효율 12% 증가 / 자신의 비-저주 오라 스킬 효과 10% 증가
-                </P>
-
-                <h2 id="list10">판테온</h2>
-                <P>
-                판테온 서식 지역
-                </P>
-
-                <h2 id="list11">감시자의돌</h2>
-                <P>
-                헤이워크촌락 세팅
-                </P>
-
-                <h2 id="list12">지도</h2>
-                <P>
-                자주 쓰이는 지도
-                </P>
+                <div id="list1_content" clas="content" style="display:none">
+                    <h2>수확</h2>
+                    <P>
+                        수확 우선 순위<br>
+                        야생뾰족등<br>
+                        - 희귀 아이템 재련 (접두어 모두 유지)<br>
+                        - 희귀 아이템 재련 (접미어 모두 유지)<br>
+                        - 희귀 아이템 재련. 같은 유형의 속성이 나올 가능성 낮음<br>
+                        - 희귀 아이템 재련. 같은 유형의 속성이 나올 가능성 높음<br>
+                    </P>
+                </div>
+                
+                <div id="list2_content" clas="content" style="display:none">
+                    <h2>베이스아이템</h2>
+                    <P>
+                        중요한 베이스아이템<br>
+                        목걸이<br>
+                        마노 목걸이 lv85<br>
+                        황수정 목걸이 lv85<br>
+                    </P>
+                </div>
+                
+                <div id="list3_content" clas="content" style="display:none">
+                    <h2>스킬군주얼</h2>
+                    <P>
+                        대형 스킬 군주얼<br>
+                        냉기 피해 12% 증가 lv68
+                    </P>
+                </div>
+                
+                <div id="list4_content" clas="content" style="display:none">
+                    <h2>불멸자</h2>
+                    <P>
+                        불멸자 세팅
+                    </P>
+                </div>
+                
+                <div id="list5_content" clas="content" style="display:none">
+                    <h2>앗조아틀</h2>
+                    <P>
+                        중요한 사원 목록
+                    </P>
+                </div>
+                
+                <div id="list6_content" clas="content" style="display:none">
+                    <h2>야수</h2>
+                    <P>
+                        주로 사용하는 야수
+                    </P>
+                </div>
+                
+                <div id="list7_content" clas="content" style="display:none">
+                    <h2>주얼</h2>
+                    <P>
+                        잘 쓰이는 군주얼
+                    </P>
+                </div>
+                
+                <div id="list8_content" clas="content" style="display:none">
+                    <h2>스킬젬</h2>
+                    <P>
+                        중요 스킬젬
+                    </P>
+                </div>
+                
+                <div id="list9_content" clas="content" style="display:none">
+                    <h2">성유</h2>
+                    <P>
+                        성유 인챈트 목록<br>
+                        주권:은빛성유 3개 - 스킬의 마나 점유 효율 12% 증가 / 자신의 비-저주 오라 스킬 효과 10% 증가
+                    </P>
+                </div>
+                
+                <div id="list10_content" clas="content" style="display:none">
+                    <h2>판테온</h2>
+                    <P>
+                        판테온 서식 지역
+                    </P>
+                </div>
+                
+                
+                <div id="list11_content" clas="content" style="display:none">
+                    <h2>감시자의돌</h2>
+                    <P>
+                        헤이워크촌락 세팅
+                    </P>
+                </div>
+                
+                <div id="list12_content" clas="content" style="display:none">
+                    <h2>지도</h2>
+                    <P>
+                        자주 쓰이는 지도
+                    </P>
+                </div>
             </div>
         </div>
     </div>
     <a id="top_scroll" href="#main"><img src="image/top.jpg"></a>
+    <script src="div.js"></script>
 </body>
 
 </html>
