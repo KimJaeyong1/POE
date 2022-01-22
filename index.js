@@ -8,24 +8,30 @@ window.onload = function() {
     
 function showClock()
     {
-        var currentDate=new Date();
-        var divClock=document.getElementById("time");
-        var apm=currentDate.getHours();
-        if(apm<12)
-        {
-            apm="AM ";
+        var Clock = document.getElementById("time");
+        var currentDate = new Date();
+        var ampm = 'AM';
+        var currentHours = timeDisplay(currentDate.getHours(),2);
+        var currentMinute = timeDisplay(currentDate.getMinutes(),2);
+        var currentSeconds = timeDisplay(currentDate.getSeconds(),2);
+
+        if(currentHours >=  12) {
+            ampm = 'PM';
+            currentHours = timeDisplay(currentHours-12,2);
         }
-        else
-        {
-            apm="PM ";
+
+        function timeDisplay(num, digit) {
+            var zero = '';
+            num = num.toString();
+            if(num.length < digit) {
+                for(i = 0; i < digit-num.length; i++) {
+                    zero += '0';
+                }
+            }
+            return zero + num;
         }
-        
-        var msg = apm +(
-        currentDate.getHours()-12)+" : ";
-        msg += currentDate.getMinutes() + " : ";
-        msg += currentDate.getSeconds();
-        
-        divClock.innerText=msg;
+
+        Clock.innerHTML = ampm+" "+currentHours+" : "+currentMinute+" : "+currentSeconds;
         
         setTimeout(showClock,1000);
     }
