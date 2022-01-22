@@ -133,7 +133,7 @@ h2 {
     margin-left: 30px;
 }
 
-p {
+#main_contnet > .content > p {
     margin-top: 50px;
     margin-left: 30px;
 }
